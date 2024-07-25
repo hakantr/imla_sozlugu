@@ -1,0 +1,16 @@
+SET UTF-8
+TRY İiIıŞşÇçĞğÜüÖö-qwertyuopasdfghjklzxcvbnmQWERTYUOPASDFGHJKLZXCVBNM'
+FLAG num
+
+SFX N Y 7
+SFX N k ğı [^aeıioöuü] k
+SFX N k ğın [^aeıioöuü] k
+SFX N k ğında [^aeıioöuü] k
+SFX N 0 lar [^aeıioöuü]$
+SFX N 0 ları [^aeıioöuü]$
+SFX N 0 larda [^aeıioöuü]$
+SFX N 0 dan [^aeıioöuü]$
+
+# Replace rules to correct specific words or phrases
+REP 1
+REP birleşik_arap_emirlikleri Birleşik_Arap_Emirlikleri
